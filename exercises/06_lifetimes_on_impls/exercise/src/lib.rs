@@ -5,7 +5,7 @@ struct WordIterator<'s> {
     string: &'s str
 }
 
-impl<'s> WordIterator<'s> {
+impl <'s> WordIterator<'s> {
     /// Creates a new WordIterator based on a string.
     fn new(string: &'s str) -> WordIterator<'s> {
         WordIterator {
